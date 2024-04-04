@@ -52,6 +52,7 @@ export const Provider = ({ children }) => {
         date: transaction._document.data.value.mapValue.fields.date.stringValue,
         id: transaction._document.data.value.mapValue.fields.id.stringValue,
         type: transaction._document.data.value.mapValue.fields.type.stringValue,
+        userID: transaction._document.data.value.mapValue.fields.userID.stringValue,
       };
       arrytransactions.push(transactionData);
     }

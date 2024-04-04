@@ -5,6 +5,7 @@ import { Details, Main } from './components';
 import { useFirebase } from './firebase';
 import useStyles from './styles';
 import ExportCSVButton from './Auth/ExportCSVButton';
+import './App.css';
 const App = () => {
   const classes = useStyles();
   const firebase = useFirebase();
@@ -21,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="background">
        <Grid container justify="flex-end">
        <ExportCSVButton/>
         <Button style={{ backgroundColor: 'lightgrey', marginRight: '10px' ,marginTop:'5px'}} onClick={handleLogout}>

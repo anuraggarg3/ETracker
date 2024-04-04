@@ -24,6 +24,9 @@ const useTransactions = (title) => {
     datasets: [{
       data: filteredCategories.map((c) => c.amount),
       backgroundColor: filteredCategories.map((c) => c.color),
+      radius: '65%',
+      hoverOffset: 20,
+      borderColor: 'black',
     }],
     labels: filteredCategories.map((c) => c.type),
   };

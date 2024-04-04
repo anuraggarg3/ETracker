@@ -35,7 +35,7 @@ console.log("arrytransactions",arrytransactions)
   };
 
   return (
-    <Button variant="outlined" color="primary" style={{ marginRight: '30px' ,marginTop:'5px'}} onClick={handleExportCSV}>
+    <Button variant="contained" color="white" style={{ marginRight: '30px' ,marginTop:'5px'}} onClick={handleExportCSV}>
       Export to CSV
     </Button>
   );

@@ -14,7 +14,7 @@ function Login() {
     const isLoggedIn = firebase.isLoggedIn;
     useEffect(()=>{
       if(firebase.isLoggedIn){
-        navigate("/")
+        navigate("/home")
         window.location.reload();
       }
     },[firebase,navigate])
@@ -79,7 +79,7 @@ function Login() {
       </Box>
       <Grid container justifyContent="flex-end" sx={{ mt: 2 }}>
             <Grid item>
-            <Link onClick={() => navigate('/signup')} variant="body2"  style={{ cursor: "pointer" }}  >
+            <Link onClick={() => navigate('/')} variant="body2"  style={{ cursor: "pointer" }}  >
                 Don't have an account? Sign Up
               </Link>
             </Grid>

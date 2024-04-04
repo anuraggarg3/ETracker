@@ -14,7 +14,7 @@ function Signup() {
 
   useEffect(() => {
     if (firebase.isLoggedIn) {
-      navigate('/');
+      navigate('/home');
     }
   }, [firebase, navigate]);
 
